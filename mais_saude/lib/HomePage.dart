@@ -40,20 +40,59 @@ class _HomePageState extends State<HomePage> {
               child: SizedBox.expand(
                 child: FlatButton(
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Text("JÁ SOU CADASTRADO!",
+                      Text("JÁ SOU CADASTRADO",
                       style: TextStyle(
-                        fontSize: 15,
+                        fontSize: 20,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
                       ),
                       )
                     ],
                   ),
+                  onPressed: (){},
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            Container(
+              height: 60,
+              alignment: Alignment.centerLeft,
+              decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                      end: Alignment.bottomRight,
+                      begin: Alignment.centerLeft,
+                      stops: [0.3, 1],
+                      colors: [
+                        Colors.blue,
+                        Colors.lightBlue
+                      ]
+                  ),
+                  borderRadius: BorderRadius.all(
+                      Radius.circular(20)
+                  )
+              ),
+              child: SizedBox.expand(
+                child: FlatButton(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text("QUERO ME CADASTRAR",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      )
+                    ],
+                  ),
+                  onPressed: (){},
                 ),
               ),
             )
-
           ],
         )
       ),
