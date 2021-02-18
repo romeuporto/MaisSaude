@@ -81,23 +81,6 @@ class _HomePageState extends State<HomePage> {
                       Radius.circular(20)
                   )
               ),
-              child: SizedBox.expand(
-                child: FlatButton(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Text("QUERO ME CADASTRAR",
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
-                      )
-                    ],
-                  ),
-                  onPressed: (){},
-                ),
-              ),
             )
           ],
         )
