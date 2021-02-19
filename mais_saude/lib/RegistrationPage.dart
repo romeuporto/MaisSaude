@@ -29,6 +29,56 @@ class _RegisterPageState extends State<RegisterPage> {
                   fontWeight: FontWeight.w400,
                 )
               )
+            ),
+            TextFormField(
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                    labelText: "CPF",
+                    labelStyle: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w400,
+                    )
+                )
+            ),
+            TextFormField(
+                keyboardType: TextInputType.datetime,
+                decoration: InputDecoration(
+                    labelText: "Data de Nascimento",
+                    labelStyle: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w400,
+                    )
+                )
+            ),
+            TextFormField(
+                keyboardType: TextInputType.text,
+                decoration: InputDecoration(
+                    labelText: "Nome da Mãe",
+                    labelStyle: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w400,
+                    )
+                )
+            ),
+            TextFormField(
+                keyboardType: TextInputType.phone,
+                decoration: InputDecoration(
+                    labelText: "Celular",
+                    labelStyle: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w400,
+                    )
+                )
+            ),
+            TextFormField(
+                keyboardType: TextInputType.emailAddress,
+                decoration: InputDecoration(
+                    labelText: "E-mail",
+                    labelStyle: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w400,
+                    )
+                )
             )
           ]
         ),
