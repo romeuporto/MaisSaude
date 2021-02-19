@@ -50,14 +50,16 @@ class _HomePageState extends State<HomePage> {
                         color: Colors.white,
                       ),
                       )
-                    ],
+                    ]
                   ),
                   onPressed: (){
                     Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context)=> PageLogin())
+                        MaterialPageRoute(
+                            builder: (context) => PageLogin()
+                        )
                     );
-                  },
+                  }
                 ),
               ),
             ),
@@ -80,6 +82,23 @@ class _HomePageState extends State<HomePage> {
                   borderRadius: BorderRadius.all(
                       Radius.circular(20)
                   )
+              ),
+              child: SizedBox.expand(
+                child: FlatButton(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text("QUERO ME CADASTRAR",
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                      ),
+                    ],
+                  ),
+                  onPressed: (){},
+                ),
               ),
             )
           ],
