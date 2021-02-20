@@ -53,14 +53,6 @@ class _HomePageState extends State<HomePage> {
                       )
                     ]
                   ),
-                  onPressed: (){
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => PageLogin()
-                        )
-                    );
-                  }
                 ),
               ),
             ),
@@ -101,10 +93,11 @@ class _HomePageState extends State<HomePage> {
                   onPressed: (){
                     Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => RegisterPage()
-                        )
+                        MaterialPageRoute(
+                          builder: (context) => RegisterPage(),
+                        ),
                     );
-                  },
+                  }
                 ),
               ),
             )

@@ -13,6 +13,7 @@ class _RegisterPageState extends State<RegisterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        color: Colors.blueAccent,
         padding: EdgeInsets.only(
           top: 60,
           right: 40,
@@ -21,65 +22,87 @@ class _RegisterPageState extends State<RegisterPage> {
         child: ListView(
           children: <Widget>[
             TextFormField(
+              cursorColor: Colors.white,
               keyboardType: TextInputType.text,
               decoration: InputDecoration(
-                labelText: "Nome Completo",
-                labelStyle: TextStyle(
-                  fontSize: 14,
+                hintText: "Nome Completo",
+                hintStyle: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
                   fontWeight: FontWeight.w400,
-                )
-              )
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 30,
             ),
             TextFormField(
                 keyboardType: TextInputType.number,
                 decoration: InputDecoration(
-                    labelText: "CPF",
-                    labelStyle: TextStyle(
-                      fontSize: 14,
+                    hintText: "CPF",
+                    hintStyle: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
                       fontWeight: FontWeight.w400,
-                    )
+                    ),
                 )
+            ),
+            SizedBox(
+              height: 30,
             ),
             TextFormField(
                 keyboardType: TextInputType.datetime,
                 decoration: InputDecoration(
-                    labelText: "Data de Nascimento",
-                    labelStyle: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w400,
-                    )
+                  hintText: "Data de Nascimento",
+                  hintStyle: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w400,
+                  ),
                 )
+            ),
+            SizedBox(
+              height: 30,
             ),
             TextFormField(
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
-                    labelText: "Nome da Mãe",
-                    labelStyle: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w400,
-                    )
+                  hintText: "Nome da Mãe",
+                  hintStyle: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w400,
+                  ),
                 )
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            TextFormField(
+                keyboardType: TextInputType.number,
+                decoration: InputDecoration(
+                  hintText: "Cartão do SUS",
+                  hintStyle: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w400,
+                  ),
+                )
+            ),
+            SizedBox(
+              height: 30,
             ),
             TextFormField(
                 keyboardType: TextInputType.phone,
                 decoration: InputDecoration(
-                    labelText: "Celular",
-                    labelStyle: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w400,
-                    )
+                  hintText: "Celular",
+                  hintStyle: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w400,
+                  ),
                 )
             ),
-            TextFormField(
-                keyboardType: TextInputType.emailAddress,
-                decoration: InputDecoration(
-                    labelText: "E-mail",
-                    labelStyle: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w400,
-                    )
-                )
-            )
           ]
         ),
       ),
