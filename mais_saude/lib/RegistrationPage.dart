@@ -37,6 +37,8 @@ class _RegisterPageState extends State<RegisterPage> {
               height: 30,
             ),
             TextFormField(
+                cursorColor: Colors.white,
+                maxLength: 11,
                 keyboardType: TextInputType.number,
                 decoration: InputDecoration(
                     hintText: "CPF",
@@ -51,6 +53,7 @@ class _RegisterPageState extends State<RegisterPage> {
               height: 30,
             ),
             TextFormField(
+                cursorColor: Colors.white,
                 keyboardType: TextInputType.datetime,
                 decoration: InputDecoration(
                   hintText: "Data de Nascimento",
@@ -65,6 +68,7 @@ class _RegisterPageState extends State<RegisterPage> {
               height: 30,
             ),
             TextFormField(
+                cursorColor: Colors.white,
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
                   hintText: "Nome da Mãe",
@@ -79,6 +83,7 @@ class _RegisterPageState extends State<RegisterPage> {
               height: 30,
             ),
             TextFormField(
+                cursorColor: Colors.white,
                 keyboardType: TextInputType.number,
                 decoration: InputDecoration(
                   hintText: "Cartão do SUS",
@@ -93,6 +98,7 @@ class _RegisterPageState extends State<RegisterPage> {
               height: 30,
             ),
             TextFormField(
+                cursorColor: Colors.white,
                 keyboardType: TextInputType.phone,
                 decoration: InputDecoration(
                   hintText: "Celular",
