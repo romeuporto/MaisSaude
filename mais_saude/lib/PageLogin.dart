@@ -22,6 +22,9 @@ class _PageLoginState extends State<PageLogin> {
               height: 150,
             ),
             TextFormField(
+              style: TextStyle(
+                color: Colors.white
+              ),
               keyboardType: TextInputType.emailAddress,
               decoration: InputDecoration(
                 labelText: "E-mail",
@@ -54,7 +57,6 @@ class _PageLoginState extends State<PageLogin> {
                       color: Colors.black38,
                     ),
                   ),
-                  onPressed: (){},
                 )
             ),
             Container(
