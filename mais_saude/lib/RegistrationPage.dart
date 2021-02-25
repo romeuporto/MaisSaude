@@ -25,6 +25,12 @@ class _RegisterPageState extends State<RegisterPage> {
               cursorColor: Colors.white,
               keyboardType: TextInputType.text,
               decoration: InputDecoration(
+                focusedBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(
+                      width: 1.5,
+                      color: Colors.white
+                  ),
+                ),
                 hintText: "Nome Completo",
                 hintStyle: TextStyle(
                   color: Colors.white,
@@ -32,22 +38,34 @@ class _RegisterPageState extends State<RegisterPage> {
                   fontWeight: FontWeight.w400,
                 ),
               ),
+              style: TextStyle(
+                color: Colors.white,
+              ),
             ),
             SizedBox(
               height: 30,
             ),
             TextFormField(
-                cursorColor: Colors.white,
-                maxLength: 11,
-                keyboardType: TextInputType.number,
-                decoration: InputDecoration(
-                    hintText: "CPF",
-                    hintStyle: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                      fontWeight: FontWeight.w400,
-                    ),
-                )
+              cursorColor: Colors.white,
+              maxLength: 11,
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                focusedBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(
+                      width: 1.5,
+                      color: Colors.white
+                  ),
+                ),
+                hintText: "CPF",
+                hintStyle: TextStyle(
+                 color: Colors.white,
+                 fontSize: 20,
+                 fontWeight: FontWeight.w400,
+                 ),
+                ),
+              style: TextStyle(
+                color: Colors.white,
+              ),
             ),
             SizedBox(
               height: 30,
@@ -56,13 +74,22 @@ class _RegisterPageState extends State<RegisterPage> {
                 cursorColor: Colors.white,
                 keyboardType: TextInputType.datetime,
                 decoration: InputDecoration(
+                  focusedBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(
+                        width: 1.5,
+                        color: Colors.white
+                    ),
+                  ),
                   hintText: "Data de Nascimento",
                   hintStyle: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
                     fontWeight: FontWeight.w400,
                   ),
-                )
+                ),
+              style: TextStyle(
+                color: Colors.white,
+              ),
             ),
             SizedBox(
               height: 30,
@@ -71,13 +98,22 @@ class _RegisterPageState extends State<RegisterPage> {
                 cursorColor: Colors.white,
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
+                  focusedBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(
+                        width: 1.5,
+                        color: Colors.white
+                    ),
+                  ),
                   hintText: "Nome da Mãe",
                   hintStyle: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
                     fontWeight: FontWeight.w400,
                   ),
-                )
+                ),
+              style: TextStyle(
+                color: Colors.white,
+              ),
             ),
             SizedBox(
               height: 30,
@@ -86,13 +122,22 @@ class _RegisterPageState extends State<RegisterPage> {
                 cursorColor: Colors.white,
                 keyboardType: TextInputType.number,
                 decoration: InputDecoration(
+                  focusedBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(
+                        width: 1.5,
+                        color: Colors.white
+                    ),
+                  ),
                   hintText: "Cartão do SUS",
                   hintStyle: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
                     fontWeight: FontWeight.w400,
                   ),
-                )
+                ),
+              style: TextStyle(
+                color: Colors.white,
+              ),
             ),
             SizedBox(
               height: 30,
@@ -101,13 +146,22 @@ class _RegisterPageState extends State<RegisterPage> {
                 cursorColor: Colors.white,
                 keyboardType: TextInputType.phone,
                 decoration: InputDecoration(
+                  focusedBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(
+                        width: 1.5,
+                        color: Colors.white
+                    ),
+                  ),
                   hintText: "Celular",
                   hintStyle: TextStyle(
                     color: Colors.white,
                     fontSize: 20,
                     fontWeight: FontWeight.w400,
                   ),
-                )
+                ),
+              style: TextStyle(
+                color: Colors.white,
+              ),
             ),
           ]
         ),
