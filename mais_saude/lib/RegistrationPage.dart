@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'PageLogin.dart';
 import 'HomePage.dart';
 import 'main.dart';
+import 'RegisterPage2.dart';
 
 class RegisterPage extends StatefulWidget {
   @override
@@ -175,8 +176,8 @@ class _RegisterPageState extends State<RegisterPage> {
                       begin: Alignment.centerLeft,
                       stops: [0.3, 1],
                       colors: [
-                        Colors.green,
-                        Colors.green[400],
+                        Colors.white,
+                        Colors.white70,
                       ]
                   ),
                   borderRadius: BorderRadius.all(
@@ -192,11 +193,19 @@ class _RegisterPageState extends State<RegisterPage> {
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
-                          color: Colors.white,
+                          color: Colors.blue,
                         ),
                       ),
                     ],
                   ),
+                    onPressed: (){
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => RegisterPage2(),
+                        ),
+                      );
+                    }
                 ),
               ),
             ),
