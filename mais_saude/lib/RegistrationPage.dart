@@ -163,6 +163,46 @@ class _RegisterPageState extends State<RegisterPage> {
                 color: Colors.white,
               ),
             ),
+            SizedBox(
+              height: 15,
+            ),
+            Container(
+              height: 50,
+              alignment: Alignment.centerLeft,
+              decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                      end: Alignment.bottomRight,
+                      begin: Alignment.centerLeft,
+                      stops: [0.3, 1],
+                      colors: [
+                        Colors.green,
+                        Colors.green[400],
+                      ]
+                  ),
+                  borderRadius: BorderRadius.all(
+                      Radius.circular(20)
+                  )
+              ),
+              child: SizedBox.expand(
+                child: FlatButton(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text("Continuar",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
           ]
         ),
       ),
